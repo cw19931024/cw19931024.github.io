@@ -186,25 +186,25 @@ class keydown extends React.Component {
                     <div className={'color-btn'}>
                         <Button className={'btn'} >背板色</Button>
                         <Input type={'color'} onChange={this.onChangeColor.bind(this, 'beibanColor')} />
-                        {beibanColor}
+                        <p>{beibanColor}</p>
                     </div>
 
                     <div className={'color-btn'}>
                         <Button className={'btn'} >外壳色</Button>
                         <Input type={'color'} onChange={this.onChangeColor.bind(this, 'backColor')} />
-                        {backColor}
+                        <p>{backColor}</p>
                     </div>
 
                     <div className={'color-btn'}>
                         <Button className={'btn'} >按键灯光色</Button>
                         <Input type={'color'} onChange={this.onChangeColor.bind(this, 'keyLightColor')} />
-                        {keyLightColor}
+                        <p>{keyLightColor}</p>
                     </div>
 
                     <div className={'color-btn'}>
                         <Button className={'btn'} >键帽色</Button>
                         <Input type={'color'} onChange={this.onChangeColor.bind(this, 'keyTopColor')} />
-                        {keyTopColor}
+                        <p>{keyTopColor}</p>
                     </div>
                 </div>
                 <div className="keyDown" style={backColor && { 'backgroundColor': backColor }}>
